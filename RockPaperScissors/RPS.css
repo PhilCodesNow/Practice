@@ -1,0 +1,31 @@
+/* #8D8741 OLIVE GREEN
+#659DBD    BLUE 
+#DAAD86     PEACH 
+#BC986A    BROWN
+#FBEEC1     LIGHT TAN */
+
+
+body{
+    text-align: center;
+    background-color: #FBEEC1;
+    width: 90%;
+    margin: 0 auto;
+}
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 40px;
+}
+header{
+    text-shadow: 2px 2px 7px black;
+}
+#choices img{
+    width: 25%;
+    height: 300px;
+    margin: 20px;
+    border: 2px solid #DAAD86;
+}
+#choices img:hover{
+    box-shadow: 3px 3px 12px #659DBD;
+}
