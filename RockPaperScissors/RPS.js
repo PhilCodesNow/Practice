@@ -24,10 +24,20 @@ function playerChooses(playersDecision){
 
 
 function decideWinner(){
-    if(playerChoice === choice)
+    if(playerChoice === computerChoice){
+        return 'tie';
+        console.log('tie');
+    }else if(playerChoice === choice[0]){
+        return computerChoice === choice[1] ? 'playerLoss'
+        : computerChoice === choice[2] ; 'computerLoss'
+    }else if(playerChoice === choice[1]){
+        return computerChoice === choice[0] ; 'computerLoss'
+        : computerChoice === choice [2] ; 'playerLoss'
+    }else if(playerChoice === choice[2]){
+         computerChoice === choice[0] ; 'playerLoss'
+        : computerChoice === choice[1] ; 'computerLoss'
+    }
 }
-
-
 
 
 

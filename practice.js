@@ -59,6 +59,8 @@
 
 
 
+let myArr = ['hi', 'bye', 'hello'];
+
 
 
 
