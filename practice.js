@@ -62,6 +62,49 @@
 let myArr = ['hi', 'bye', 'hello'];
 
 
+let myObj = {
+    name: 'alex',
+    age: 34,
+    byear: 1985
+}
+
+const objIt = Object.keys(myObj);
+
+
+
+for(let i = 0; i < objIt.length; i++){
+    console.log(myObj[objIt[i]]);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
