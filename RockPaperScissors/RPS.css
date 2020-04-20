@@ -27,5 +27,12 @@ header{
     border: 2px solid #DAAD86;
 }
 #choices img:hover{
-    box-shadow: 3px 3px 12px #659DBD;
+    box-shadow: 3px 3px 20px 10px #659DBD;
+}
+#results img{
+    width: 25%;
+    height: 300px;
+    margin: 20px;
+    border: 2px solid #DAAD86;
+    display: none;
 }

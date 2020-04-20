@@ -1,5 +1,5 @@
-let playerChoice;
-let computerChoice;
+let playerChoice = undefined;
+let computerChoice = undefined;
 
 const choice = ['rock', 'paper', 'scissors'];
 
@@ -9,36 +9,109 @@ function computerChooses(){
 }
 
 function playerChooses(playersDecision){
-    if(playersDecision == 'rock'){
+    if(playersDecision === 'rock'){
         playerChoice = choice[0];
-        return playerChoice;
-    } else if(playersDecision == 'paper'){
+    } else if(playersDecision === paper){
         playerChoice = choice[1];
-        return playerChoice;
-    } else if(playersDecision == 'scissors'){
+    } else if(playersDecision === scissors){
         playerChoice = choice[2];
-        return playerChoice;
     }
-    decideWinner();
+    return playerChoice;
+    computerChooses();
+    decideWinner(playerChoice, computerChoice);
+}
+
+let outcome = undefined;
+
+//// figure out display result, and calling it
+// const displayResult = (outcome) => {
+//     if(outcome === 'tie'){
+//         if(playerChoice === choice[0]){
+//             let tieDoc = document.getElementById('rockResult').style.display = "inline";
+//         }else if(playerChoice === choice[1]){
+//             let tieDoc = document.getElementById('paperResult').style.display = "inline";
+//         }else if(playerChoice === choice[2]){
+//             let tieDoc = document.getElementById('scissorsResult').style.display = "inline";
+//         }
+//     }else if(outcome === 'computerLoss'){
+//         if(playerChoice === choice[0]){
+//             let playerDoc = document.getElementById('rockResult').style.display = "inline";
+//         }else if(playerChoice === choice[1]){
+//             let playerDoc = document.getElementById('paperResult').style.display = "inline";
+//         }else if(playerChoice === choice[2]){
+//             let playerDoc = document.getElementById('scissorsResult').style.display = "inline";
+//         }
+//         if(computerChoice === choice[0]){
+//             let computerDoc = document.getElementById('rockResult').style.display = "inline";
+//         }else if(computerChoice === choice[1]){
+//             let computerDoc = document.getElementById('paperResult').style.display = "inline";
+//         }else if(computerChoice === choice[2]){
+//             let computerDoc = document.getElementById('scissorsResult').style.display = "inline";
+//         }
+//     }else if(outcome === 'playerLoss'){
+//         if(playerChoice === choice[0]){
+//             let playerDoc = document.getElementById('rockResult').style.display = "inline";
+//         }else if(playerChoice === choice[1]){
+//             let playerDoc = document.getElementById('paperResult').style.display = "inline";
+//         }else if(playerChoice === choice[2]){
+//             let playerDoc = document.getElementById('scissorsResult').style.display = "inline";
+//         }
+//         if(computerChoice === choice[0]){
+//             let computerDoc = document.getElementById('rockResult').style.display = "inline";
+//         }else if(computerChoice === choice[1]){
+//             let computerDoc = document.getElementById('paperResult').style.display = "inline";
+//         }else if(computerChoice === choice[2]){
+//             let computerDoc = document.getElementById('scissorsResult').style.display = "inline";
+//         }
+//     }
+// }
+
+
+
+
+
+
+const finalResult = (outcome) => {
+    if(outcome === 'tie'){
+        let playerDoc = document.getElementById('choices').style.visibility='hidden';
+    }
+    if(outcome === 'playerLoss'){
+        let playerDoc = document.getElementById('choices').style.visibility='hidden';
+    }
+    if(outcome === 'computerLoss'){
+        let playerDoc = document.getElementById('choices').style.visibility='hidden';
+    }
+    displayResult(outcome)
 }
 
 
-function decideWinner(){
+function decideWinner(playerChoice, computerChoice){
     if(playerChoice === computerChoice){
-        return 'tie';
-        console.log('tie');
+        outcome = 'tie';
     }else if(playerChoice === choice[0]){
-        return computerChoice === choice[1] ? 'playerLoss'
-        : computerChoice === choice[2] ; 'computerLoss'
+        if(computerChoice === choice[1]){
+            outcome = 'playerLoss';
+         }else if(computerChoice === choice[2]){
+             outcome = 'computerLoss';
+         }
     }else if(playerChoice === choice[1]){
-        return computerChoice === choice[0] ; 'computerLoss'
-        : computerChoice === choice [2] ; 'playerLoss'
+        if(computerChoice === choice[0]){
+            outcome = 'computerLoss'
+        }else if(computerChoice === choice [2]){
+            outcome = 'playerLoss';
+        }
     }else if(playerChoice === choice[2]){
-         computerChoice === choice[0] ; 'playerLoss'
-        : computerChoice === choice[1] ; 'computerLoss'
+        if(computerChoice === choice[0]){
+            outcome = 'playerLoss';
+        }else if(computerChoice === choice[1]){
+            outcome = 'computerLoss';
+        }
     }
-}
 
+
+    finalResult(outcome)
+    
+}
 
 
 
