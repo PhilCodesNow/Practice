@@ -1,0 +1,32 @@
+body{
+    background-color: #d6d7da;
+    text-align: center;
+}
+#overall{
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+}
+nav{
+    padding: 2em 0;
+}
+nav h4{
+    display: inline;
+    margin-right: 70%;
+}
+nav ul{
+    display: inline;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline;
+    padding: 5px 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+}
+#aboutMore li{
+    display: block;
+    position: absolute;
+}
