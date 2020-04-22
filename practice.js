@@ -59,28 +59,40 @@
 
 
 
-let myArr = ['hi', 'bye', 'hello'];
+// let myArr = ['hi', 'bye', 'hello'];
 
 
-let myObj = {
-    name: 'alex',
-    age: 34,
-    byear: 1985
-}
+// let myObj = {
+//     name: 'alex',
+//     age: 34,
+//     byear: 1985
+// }
 
-const objIt = Object.keys(myObj);
-
-
-
-for(let i = 0; i < objIt.length; i++){
-    console.log(myObj[objIt[i]]);
-}
+// const objIt = Object.keys(myObj);
 
 
 
+// for(let i = 0; i < objIt.length; i++){
+//     console.log(myObj[objIt[i]]);
+// }
+
+// const checkPrime = (num) => {
+//     for(let i = 2; i <= num; i++){
+//         if(num % i === 0){
+//             return false;
+//         }else{
+//             return true;
+//         }
+//     }
+// }
 
 
-
+// const printPrimes = (limit) => {
+//     for(let i = 2; i <= limit; i++){
+//         checkPrime(i) ? console.log(i) : null;
+//     }
+// }
+// printPrimes(50);
 
 
 
