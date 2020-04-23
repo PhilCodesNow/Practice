@@ -95,11 +95,22 @@
 // printPrimes(50);
 
 
+///////////////////////////////////////////////////////////////
+const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+
+const myStrings = ['Hello', 'Whats up', 'Bye', 'Ciao'];
+///////////////////////////////////////////////////////////////
 
 
+let string = 'hello';
 
+console.log(string.charAt(1));
+console.log(myStrings[0].charAt(1));
 
+console.log(myStrings[0].concat(string));
 
+console.log(myNums.indexOf(5));
+console.log(myStrings.indexOf('Bye'));
 
 
 

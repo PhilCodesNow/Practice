@@ -15,12 +15,24 @@ const staffs = [
 const random = (highNum) => {
     return Math.floor(Math.random(highNum));
 }
-ty j mgmz   dx cxz
+
 
 /////// Game Options
 const options = {
     f: () => {
-        const result = random(gameStats.staff)
+        const result = random(staffs[gamesstats.staff].power);
+        if(result > 10){
+            alert('You have vanquished the villain');
+            gameStats.gold += 100
+        }else{
+            alert('The enemy lives!!!');
+        }
+    },
+    u: () => {
+        if(gameStats.gold >= staffs[gameStats.staff + 1].cost){
+            alert('You have upgraded');
+            gameStats.staff++;
+        }
     }
 }
 ////// Game Loop
