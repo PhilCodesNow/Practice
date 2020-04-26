@@ -31,7 +31,7 @@ h2{
     margin-top: 10%;
     display: grid;
     grid-template-columns: 4fr, auto;
-    grid-template-rows: 7fr, auto;
+    grid-template-rows: 8fr, auto;
     grid-row-gap: 5px;
     grid-column-gap: 5px;
     background-color: #5CDB95;
@@ -49,14 +49,14 @@ h2{
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 1;
-    grid-row-end: 3;
+    grid-row-end: 4;
     background-color: #05386B;
 }
 .clear{
     grid-column-start: 4;
     grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
     background-color: #05386B;
 }
 .clear:hover{
@@ -66,8 +66,8 @@ h2{
     content: \00F7;
     grid-column-start: 4;
     grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
 
     background-color: #05386B;
 }
@@ -77,8 +77,8 @@ h2{
 .mult{
     grid-column-start: 4;
     grid-column-end: 5;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-row-start: 6;
+    grid-row-end: 7;
     background-color: #05386B;
 }
 .mult:hover{
@@ -87,8 +87,8 @@ h2{
 .add{
     grid-column-start: 4;
     grid-column-end: 5;
-    grid-row-start: 6;
-    grid-row-end: 7;
+    grid-row-start: 7;
+    grid-row-end: 8;
     background-color: #05386B;
 }
 .add:hover{
@@ -97,8 +97,8 @@ h2{
 .sub{
     grid-column-start: 4;
     grid-column-end: 5;
-    grid-row-start: 7;
-    grid-row-end: 8;
+    grid-row-start: 8;
+    grid-row-end: 9;
     background-color: #05386B;
 }
 .sub:hover{
@@ -107,8 +107,8 @@ h2{
 .numbers{
     grid-column-start: 1;
     grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 9;
     display: grid;
     grid-template-columns: 3fr, auto;
     grid-template-rows: 3fr, auto;
@@ -143,13 +143,13 @@ h2{
     grid-row-start: 1;
     grid-row-end: 2;
 }
-#seven:hover{
+#zero:hover{
     box-shadow: 3px -3px 5px #05386B;
 }
-#eight:hover{
+#dot:hover{
     box-shadow: 3px -3px 5px #05386B;
 }
-#nine:hover{
+#equals:hover{
     box-shadow: 3px -3px 5px #05386B;
 }
 footer ul{
