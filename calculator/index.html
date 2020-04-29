@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <script src="app.js"></script>
     <title>Calculator by Phil Mayo || HTML, CSS, Javascript</title>
 </head>
 <body>
@@ -12,26 +13,30 @@
 <h2>by Phil Mayo</h2>
 <h2>Using HTML, CSS, and Javascript</h2>
 <div class="container">
-    <div class="readout"></div>
-    <div class="numbers">
-           <button class="one">1</button>
-           <button class="two">2</button>
-           <button class="three">3</button>
-           <button class="four">4</button>
-           <button class="five">5</button>
-           <button class="six">6</button>
-           <button class="seven">7</button>
-           <button class="eight">8</button>
-           <button class="nine">9</button>
-           <button class="zero" id="zero">0</button>
-           <button class="dot" id="dot">.</button>
-           <button class="equals" id="equals">=</button>
-    </div>
-    <button class="add">+</button>
-    <button class="sub">-</button>
-    <button class="div">&#247;</button>
-    <button class="clear">AC</button>
-    <button class="mult">x</button>
+    
+    <div class="readout"><p>0</p></div>
+    <div class="constainerKeys"></div>
+        <div class="numbers">
+               <button class="one">1</button>
+               <button class="two">2</button>
+               <button class="three">3</button>
+               <button class="four">4</button>
+               <button class="five">5</button>
+               <button class="six">6</button>
+               <button class="seven">7</button>
+               <button class="eight">8</button>
+               <button class="nine">9</button>
+               <button class="zero" id="zero">0</button>
+               <button class="dot" id="dot" data-action="decimal">.</button>
+        <button class="equals" id="equals" data-action="calculate">=</button>
+        </div>
+        
+        <button class="add" data-action="add">+</button>
+        <button class="sub" data-action="sub">-</button>
+        <button class="div" data-action="div">&#247;</button>
+        <button class="clear" data-action="clear">AC</button>
+        <button class="mult" data-action="mult">x</button>
+    </div>  
 </div>
 <footer>
     <h2>Resources</h2>

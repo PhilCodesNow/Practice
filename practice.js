@@ -269,17 +269,17 @@
 
 
 
-const attackPrompt = prompt('this prompt');
-switch(attackPrompt) {
-    case '1':
-        console.log('hi');
-        break;
-    case '2':
-        console.log('hi');
-        break;
-    default:
-        console.log('hi default');
-}
+// const attackPrompt = prompt('this prompt');
+// switch(attackPrompt) {
+//     case '1':
+//         console.log('hi');
+//         break;
+//     case '2':
+//         console.log('hi');
+//         break;
+//     default:
+//         console.log('hi default');
+// }
 
 
 
@@ -292,6 +292,13 @@ switch(attackPrompt) {
 
 
 
+// const gamePlay = () => {
+//     let promptPlayer = prompt('hi you');
+//     userInput = promptPlayer;
+//     if(userInput == 'true'){
+//         console.log('prompt works')
+//     }
+// }
 
-
+// gamePlay();
 
