@@ -1,0 +1,21 @@
+*{
+    text-align: center;
+}
+#cards div{
+    height: 200px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    position: relative;
+}
+
+
+
+
+
+
+
+footer{
+
+}
