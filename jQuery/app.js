@@ -15,8 +15,33 @@ const cardArray = [
     "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/933/KH__01216.1440113580.480.480.png?c=2",
     "https://cdn2.bigcommerce.com/n-d57o0b/1kujmu/products/297/images/935/AS__68652.1440113599.480.480.png?c=2",
 ]
-
+//////// create first div
 const $newDiv = $('<div>');
 const $divP =  $('<p>').addClass('cardP').text('Add a Card');
 $newDiv.append($divP);
 $('#cards').append($newDiv);
+
+//////// reset function
+const reset = () =>{
+    $('.card').remove();
+}
+
+
+/////// make delete card function
+const deleteCard = (event) =>{
+    const $img = event.target;
+    console.log('deleteCard called')
+    $img.remove();
+}
+
+
+
+//////// create new card function
+const newCard = (event) =>{
+    $div = event.currentTarget;
+    $newImg = $('<img>').attr('src', cardArray[Math.floor(Math.random () * cardArray.length)]).addClass('card');
+    $newImg.on('click', deleteCard);
+    $('#cards').append($newImg);
+}
+
+$newDiv.on('click', newCard);
