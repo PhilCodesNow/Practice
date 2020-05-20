@@ -1,0 +1,32 @@
+*{
+    border: 1px solid black;
+}
+.bigFlex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.buttonFlex{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+.outputFlex{
+    margin-top: 100px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+p{
+    width: 50px;
+    height: 30px;
+}
