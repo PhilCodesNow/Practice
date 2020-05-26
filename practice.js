@@ -1,3 +1,45 @@
+
+
+
+App.Delete('/constructionWorker/garageDoorTechnitian', (requestInfo, RespontTrue) =>{
+    newcareer.redirect(SoftwareEngineering)
+    res.render('/GeneralAssembly')
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // let Arr = ['hello', 'hi', 'how are you?', 'good'];
 
 // for(let i = 0; i < Arr.length; i++){
@@ -303,8 +345,6 @@
 // gamePlay();
 
 //////// testing git here
-
-
 
 
 
